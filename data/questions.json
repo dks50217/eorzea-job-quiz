@@ -1,0 +1,1297 @@
+[
+  {
+    "id": 1,
+    "text": "進副本面對一大群怪時，你通常會怎麼做？",
+    "options": [
+      {
+        "label": "A. 大喊「全都拉過來！」爽快AOE",
+        "value": "1A",
+        "careers": [
+          "WAR",
+          "DRK",
+          "BLM",
+          "SAM"
+        ]
+      },
+      {
+        "label": "B. 各個擊破穩扎穩打",
+        "value": "1B",
+        "careers": [
+          "SAM",
+          "NIN",
+          "DRG"
+        ]
+      },
+      {
+        "label": "C. 風箏遠程慢慢磨血",
+        "value": "1C",
+        "careers": [
+          "BRD",
+          "MCH",
+          "DNC"
+        ]
+      },
+      {
+        "label": "D. 先控制再清場",
+        "value": "1D",
+        "careers": [
+          "SCH",
+          "DNC",
+          "BLU"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "text": "戰鬥時你喜歡站在哪個位置？",
+    "options": [
+      {
+        "label": "A. 衝鋒貼臉近戰肉搏",
+        "value": "2A",
+        "careers": [
+          "PLD",
+          "WAR",
+          "MNK",
+          "SAM",
+          "RPR",
+          "VPR"
+        ]
+      },
+      {
+        "label": "B. 後排遠程風筝",
+        "value": "2B",
+        "careers": [
+          "BRD",
+          "MCH",
+          "DNC"
+        ]
+      },
+      {
+        "label": "C. 後排站樁炮臺",
+        "value": "2C",
+        "careers": [
+          "BLM",
+          "SMN"
+        ]
+      },
+      {
+        "label": "D. 先遠再近靈活切換",
+        "value": "2D",
+        "careers": [
+          "RDM",
+          "VPR"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "text": "面對需要讀條的強力技能，你的態度是？",
+    "options": [
+      {
+        "label": "A. 不動如山原地讀條",
+        "value": "3A",
+        "careers": [
+          "BLM"
+        ]
+      },
+      {
+        "label": "B. 滿場跑瞬發邊輸出",
+        "value": "3B",
+        "careers": [
+          "BRD",
+          "MCH",
+          "DNC"
+        ]
+      },
+      {
+        "label": "C. 視情況切換站樁/瞬發",
+        "value": "3C",
+        "careers": [
+          "SMN",
+          "SGE",
+          "RDM"
+        ]
+      },
+      {
+        "label": "D. 抓時機瞬移背刺",
+        "value": "3D",
+        "careers": [
+          "NIN",
+          "RDM",
+          "VPR"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "text": "開戰時你傾向哪種方式？",
+    "options": [
+      {
+        "label": "A. 正面衝鋒拉仇恨",
+        "value": "4A",
+        "careers": [
+          "PLD",
+          "WAR",
+          "DRK",
+          "GNB"
+        ]
+      },
+      {
+        "label": "B. 潛伏暗殺破綻",
+        "value": "4B",
+        "careers": [
+          "NIN",
+          "VPR",
+          "RPR"
+        ]
+      },
+      {
+        "label": "C. 遠程先手重炮/魔",
+        "value": "4C",
+        "careers": [
+          "MCH",
+          "BRD",
+          "SMN"
+        ]
+      },
+      {
+        "label": "D. 等坦拉好再爆發",
+        "value": "4D",
+        "careers": [
+          "DRG",
+          "SAM"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "text": "論輸出風格，你比較喜歡哪種？",
+    "options": [
+      {
+        "label": "A. 速攻連擊流",
+        "value": "5A",
+        "careers": [
+          "MNK",
+          "NIN",
+          "VPR"
+        ]
+      },
+      {
+        "label": "B. 重擊蓄力流",
+        "value": "5B",
+        "careers": [
+          "SAM",
+          "BLM",
+          "DRK"
+        ]
+      },
+      {
+        "label": "C. 持久DOT流",
+        "value": "5C",
+        "careers": [
+          "BRD",
+          "SCH",
+          "SMN"
+        ]
+      },
+      {
+        "label": "D. 累積後大爆發",
+        "value": "5D",
+        "careers": [
+          "RDM",
+          "VPR",
+          "RPR"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "text": "對複雜循環和操作難度的看法？",
+    "options": [
+      {
+        "label": "A. 越複雜越爽",
+        "value": "6A",
+        "careers": [
+          "NIN",
+          "BLM",
+          "BRD"
+        ]
+      },
+      {
+        "label": "B. 越簡單越好",
+        "value": "6B",
+        "careers": [
+          "WAR",
+          "WHM",
+          "SMN"
+        ]
+      },
+      {
+        "label": "C. 適中即可",
+        "value": "6C",
+        "careers": [
+          "DRG",
+          "SAM",
+          "RDM"
+        ]
+      },
+      {
+        "label": "D. 重策略時機",
+        "value": "6D",
+        "careers": [
+          "SCH",
+          "AST",
+          "DNC"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "text": "團隊中你最想扮演的角色是？",
+    "options": [
+      {
+        "label": "A. 衝鋒陷陣的先鋒隊長 (坦克)",
+        "value": "7A",
+        "careers": [
+          "PLD",
+          "WAR",
+          "DRK",
+          "GNB"
+        ]
+      },
+      {
+        "label": "B. 無私奉獻的奶媽/支援",
+        "value": "7B",
+        "careers": [
+          "WHM",
+          "SCH",
+          "AST",
+          "SGE"
+        ]
+      },
+      {
+        "label": "C. 火力全開的輸出核心",
+        "value": "7C",
+        "careers": [
+          "SAM",
+          "BLM",
+          "MCH",
+          "DRG"
+        ]
+      },
+      {
+        "label": "D. 全能萬金油",
+        "value": "7D",
+        "careers": [
+          "RDM",
+          "BLU",
+          "DNC"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "text": "當隊伍遭遇滅團危機時，你通常怎麼反應？",
+    "options": [
+      {
+        "label": "A. 指揮大局冷靜調度",
+        "value": "8A",
+        "careers": [
+          "PLD",
+          "WAR",
+          "AST"
+        ]
+      },
+      {
+        "label": "B. 先背鍋穩住氣氛",
+        "value": "8B",
+        "careers": [
+          "WHM",
+          "SGE"
+        ]
+      },
+      {
+        "label": "C. 自嘲搞笑化解尷尬",
+        "value": "8C",
+        "careers": [
+          "BRD",
+          "DNC",
+          "BLU"
+        ]
+      },
+      {
+        "label": "D. 絕境爆發放大招",
+        "value": "8D",
+        "careers": [
+          "SAM",
+          "DRK",
+          "RDM"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "text": "在MMORPG中你的社交風格是？",
+    "options": [
+      {
+        "label": "A. 獨行俠",
+        "value": "9A",
+        "careers": [
+          "BLM",
+          "SAM",
+          "BLU"
+        ]
+      },
+      {
+        "label": "B. 組隊狂熱者",
+        "value": "9B",
+        "careers": [
+          "WHM",
+          "WAR",
+          "DNC"
+        ]
+      },
+      {
+        "label": "C. 天生指揮官",
+        "value": "9C",
+        "careers": [
+          "PLD",
+          "DRK",
+          "AST"
+        ]
+      },
+      {
+        "label": "D. 默默Carry型",
+        "value": "9D",
+        "careers": [
+          "RDM",
+          "SCH",
+          "MCH"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "text": "打Boss遇到複雜機制時，你會怎麼做？",
+    "options": [
+      {
+        "label": "A. 0失誤完美躲機制",
+        "value": "10A",
+        "careers": [
+          "DNC",
+          "BRD",
+          "RDM"
+        ]
+      },
+      {
+        "label": "B. 偶爾中招無妨",
+        "value": "10B",
+        "careers": [
+          "DRG",
+          "RPR"
+        ]
+      },
+      {
+        "label": "C. 輸出至上硬吃AOE",
+        "value": "10C",
+        "careers": [
+          "BLM",
+          "SAM",
+          "WAR"
+        ]
+      },
+      {
+        "label": "D. 用無敵/減傷硬扛",
+        "value": "10D",
+        "careers": [
+          "PLD",
+          "GNB",
+          "SGE"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "text": "以下哪種角色人格最符合你的中二魂？",
+    "options": [
+      {
+        "label": "A. 行俠仗義的正統勇者",
+        "value": "11A",
+        "careers": [
+          "PLD",
+          "WHM"
+        ]
+      },
+      {
+        "label": "B. 身懷黑暗力量的魅影刺客",
+        "value": "11B",
+        "careers": [
+          "DRK",
+          "RPR",
+          "NIN"
+        ]
+      },
+      {
+        "label": "C. 瀟灑隨性的冒險者",
+        "value": "11C",
+        "careers": [
+          "BRD",
+          "DNC",
+          "SMN"
+        ]
+      },
+      {
+        "label": "D. 佛系和平主義者",
+        "value": "11D",
+        "careers": [
+          "MNK",
+          "AST"
+        ]
+      },
+      {
+        "label": "E. 古靈精怪瘋帽子",
+        "value": "11E",
+        "careers": [
+          "BLU",
+          "MCH"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "text": "推動你上戰場冒險的主因是什麼？",
+    "options": [
+      {
+        "label": "A. 責任與使命",
+        "value": "12A",
+        "careers": [
+          "PLD",
+          "WHM",
+          "WAR"
+        ]
+      },
+      {
+        "label": "B. 力量與野心",
+        "value": "12B",
+        "careers": [
+          "BLM",
+          "DRK",
+          "SAM"
+        ]
+      },
+      {
+        "label": "C. 冒險與刺激",
+        "value": "12C",
+        "careers": [
+          "MNK",
+          "BRD",
+          "DNC"
+        ]
+      },
+      {
+        "label": "D. 知識與真理",
+        "value": "12D",
+        "careers": [
+          "SCH",
+          "SGE",
+          "SMN"
+        ]
+      },
+      {
+        "label": "E. 創意與表現",
+        "value": "12E",
+        "careers": [
+          "RDM",
+          "PIC"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "text": "如果讓你釋放終極Limit Break，你更想要哪種？",
+    "options": [
+      {
+        "label": "A. 天降隕石AOE",
+        "value": "13A",
+        "careers": [
+          "BLM",
+          "SMN"
+        ]
+      },
+      {
+        "label": "B. 聖光絕對屏障",
+        "value": "13B",
+        "careers": [
+          "PLD",
+          "WAR"
+        ]
+      },
+      {
+        "label": "C. 箭雨彈幕",
+        "value": "13C",
+        "careers": [
+          "BRD",
+          "MCH",
+          "DNC"
+        ]
+      },
+      {
+        "label": "D. 單體爆發斬殺",
+        "value": "13D",
+        "careers": [
+          "SAM",
+          "DRG",
+          "NIN"
+        ]
+      },
+      {
+        "label": "E. 全隊復活",
+        "value": "13E",
+        "careers": [
+          "WHM",
+          "AST",
+          "SCH"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "text": "哪種武器最讓你有收集衝動？",
+    "options": [
+      {
+        "label": "A. 劍與盾",
+        "value": "14A",
+        "careers": [
+          "PLD"
+        ]
+      },
+      {
+        "label": "B. 巨型重兵器",
+        "value": "14B",
+        "careers": [
+          "WAR",
+          "DRK",
+          "DRG",
+          "RPR"
+        ]
+      },
+      {
+        "label": "C. 雙持利刃",
+        "value": "14C",
+        "careers": [
+          "NIN",
+          "VPR"
+        ]
+      },
+      {
+        "label": "D. 自己的雙拳",
+        "value": "14D",
+        "careers": [
+          "MNK"
+        ]
+      },
+      {
+        "label": "E. 火槍火炮",
+        "value": "14E",
+        "careers": [
+          "MCH",
+          "GNB"
+        ]
+      },
+      {
+        "label": "F. 弓箭飛刃",
+        "value": "14F",
+        "careers": [
+          "BRD",
+          "DNC"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "text": "哪種法器/魔導器具讓你覺得酷炫？",
+    "options": [
+      {
+        "label": "A. 魔法杖/法杖",
+        "value": "15A",
+        "careers": [
+          "BLM",
+          "WHM",
+          "RDM"
+        ]
+      },
+      {
+        "label": "B. 魔導書典",
+        "value": "15B",
+        "careers": [
+          "SCH",
+          "SMN"
+        ]
+      },
+      {
+        "label": "C. 星盤與卡牌",
+        "value": "15C",
+        "careers": [
+          "AST"
+        ]
+      },
+      {
+        "label": "D. 魔導兵裝",
+        "value": "15D",
+        "careers": [
+          "SGE",
+          "MCH"
+        ]
+      },
+      {
+        "label": "E. 魔畫之筆",
+        "value": "15E",
+        "careers": [
+          "PIC"
+        ]
+      },
+      {
+        "label": "F. 萬能魔杖",
+        "value": "15F",
+        "careers": [
+          "BLU"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "text": "你對戰鬥中特效和視覺效果的偏好是？",
+    "options": [
+      {
+        "label": "A. 越閃亮越好",
+        "value": "16A",
+        "careers": [
+          "DNC",
+          "BLM",
+          "SMN",
+          "RDM"
+        ]
+      },
+      {
+        "label": "B. 低調實用",
+        "value": "16B",
+        "careers": [
+          "WAR",
+          "MNK",
+          "MCH"
+        ]
+      },
+      {
+        "label": "C. 暗黑酷炫",
+        "value": "16C",
+        "careers": [
+          "DRK",
+          "RPR",
+          "NIN"
+        ]
+      },
+      {
+        "label": "D. 飄浮環繞感",
+        "value": "16D",
+        "careers": [
+          "AST",
+          "SGE",
+          "SCH"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "text": "戰鬥時你喜歡帶上一些幫手嗎？",
+    "options": [
+      {
+        "label": "A. 寵物召喚控",
+        "value": "17A",
+        "careers": [
+          "SMN",
+          "SCH",
+          "MCH"
+        ]
+      },
+      {
+        "label": "B. 獨行俠",
+        "value": "17B",
+        "careers": [
+          "SAM",
+          "BLM",
+          "WAR"
+        ]
+      },
+      {
+        "label": "C. 強化隊友BUFF",
+        "value": "17C",
+        "careers": [
+          "DNC",
+          "BRD",
+          "AST"
+        ]
+      },
+      {
+        "label": "D. 治療/保護隊友",
+        "value": "17D",
+        "careers": [
+          "WHM",
+          "SGE",
+          "PLD"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "text": "你比較喜歡哪種劇情風格？",
+    "options": [
+      {
+        "label": "A. 史詩熱血",
+        "value": "18A",
+        "careers": [
+          "PLD",
+          "DRG",
+          "SAM"
+        ]
+      },
+      {
+        "label": "B. 黑暗虐心",
+        "value": "18B",
+        "careers": [
+          "DRK",
+          "RPR",
+          "BLM"
+        ]
+      },
+      {
+        "label": "C. 搞笑逗趣",
+        "value": "18C",
+        "careers": [
+          "BLU",
+          "MCH",
+          "BRD"
+        ]
+      },
+      {
+        "label": "D. 奇幻神秘",
+        "value": "18D",
+        "careers": [
+          "SCH",
+          "AST",
+          "SMN"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "text": "當隊友血量見底時，你通常會怎樣？",
+    "options": [
+      {
+        "label": "A. 先補血",
+        "value": "19A",
+        "careers": [
+          "WHM",
+          "SGE",
+          "AST"
+        ]
+      },
+      {
+        "label": "B. 速殺敵人減傷害",
+        "value": "19B",
+        "careers": [
+          "SAM",
+          "BLM",
+          "MCH"
+        ]
+      },
+      {
+        "label": "C. 預防性護盾減傷",
+        "value": "19C",
+        "careers": [
+          "SCH",
+          "PLD",
+          "DNC"
+        ]
+      },
+      {
+        "label": "D. 拍LB或犧牲救場",
+        "value": "19D",
+        "careers": [
+          "RDM",
+          "WAR"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "text": "如果你有一句招牌戰鬥口號，會是？",
+    "options": [
+      {
+        "label": "A. 「為光明而戰！」",
+        "value": "20A",
+        "careers": [
+          "PLD",
+          "WHM"
+        ]
+      },
+      {
+        "label": "B. 「黑暗將吞噬汝等…」",
+        "value": "20B",
+        "careers": [
+          "DRK",
+          "RPR"
+        ]
+      },
+      {
+        "label": "C. 「準備嗨起來了嗎？！」",
+        "value": "20C",
+        "careers": [
+          "DNC",
+          "BRD"
+        ]
+      },
+      {
+        "label": "D. \"Boom! Headshot!\"",
+        "value": "20D",
+        "careers": [
+          "MCH",
+          "GNB"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "text": "你最喜歡的裝備外觀風格是？",
+    "options": [
+      {
+        "label": "A. 厚重鎧甲流",
+        "value": "21A",
+        "careers": [
+          "PLD",
+          "WAR",
+          "GNB"
+        ]
+      },
+      {
+        "label": "B. 長袍法袍流",
+        "value": "21B",
+        "careers": [
+          "BLM",
+          "WHM",
+          "SMN"
+        ]
+      },
+      {
+        "label": "C. 皮衣短打流",
+        "value": "21C",
+        "careers": [
+          "NIN",
+          "MCH",
+          "VPR"
+        ]
+      },
+      {
+        "label": "D. 華麗戲服流",
+        "value": "21D",
+        "careers": [
+          "DNC",
+          "BRD",
+          "RDM"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "text": "對你而言，時裝幻化的意義是？",
+    "options": [
+      {
+        "label": "A. 好看的才是最強",
+        "value": "22A",
+        "careers": [
+          "DNC",
+          "BRD",
+          "RDM"
+        ]
+      },
+      {
+        "label": "B. 實用優先",
+        "value": "22B",
+        "careers": [
+          "WAR",
+          "MNK",
+          "SMN"
+        ]
+      },
+      {
+        "label": "C. 樂於搞笑時裝",
+        "value": "22C",
+        "careers": [
+          "BLU",
+          "MCH"
+        ]
+      },
+      {
+        "label": "D. 特效武器必須安排",
+        "value": "22D",
+        "careers": [
+          "DRK",
+          "BLM",
+          "AST"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "text": "你對挑戰高難度內容的態度是？",
+    "options": [
+      {
+        "label": "A. 休閒至上",
+        "value": "23A",
+        "careers": [
+          "BRD",
+          "WHM",
+          "SMN"
+        ]
+      },
+      {
+        "label": "B. 適度挑戰",
+        "value": "23B",
+        "careers": [
+          "RDM",
+          "GNB"
+        ]
+      },
+      {
+        "label": "C. 享受超高難",
+        "value": "23C",
+        "careers": [
+          "BLM",
+          "NIN"
+        ]
+      },
+      {
+        "label": "D. 另類挑戰",
+        "value": "23D",
+        "careers": [
+          "BLU",
+          "WAR"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "text": "如果能擁有一種魔幻能力在現實中使用，你選哪一種？",
+    "options": [
+      {
+        "label": "A. 治癒術",
+        "value": "24A",
+        "careers": [
+          "WHM",
+          "SGE"
+        ]
+      },
+      {
+        "label": "B. 隱身術",
+        "value": "24B",
+        "careers": [
+          "NIN",
+          "VPR"
+        ]
+      },
+      {
+        "label": "C. 召喚術",
+        "value": "24C",
+        "careers": [
+          "SMN",
+          "SCH"
+        ]
+      },
+      {
+        "label": "D. 武藝百罐通",
+        "value": "24D",
+        "careers": [
+          "SAM",
+          "MNK",
+          "PLD"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "text": "你在遊戲中的職業規劃是？",
+    "options": [
+      {
+        "label": "A. 專精一職到底",
+        "value": "25A",
+        "careers": [
+          "SAM",
+          "BLM",
+          "WAR"
+        ]
+      },
+      {
+        "label": "B. 全職業體驗",
+        "value": "25B",
+        "careers": [
+          "BLU",
+          "RDM",
+          "SMN"
+        ]
+      },
+      {
+        "label": "C. 團隊缺什麼補什麼",
+        "value": "25C",
+        "careers": [
+          "WHM",
+          "PLD",
+          "SGE"
+        ]
+      },
+      {
+        "label": "D. 劇情導向挑職業",
+        "value": "25D",
+        "careers": [
+          "DRK",
+          "SCH",
+          "AST"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "text": "下列哪項屬性最符合你的偏好？",
+    "options": [
+      {
+        "label": "A. 力量",
+        "value": "26A",
+        "careers": [
+          "WAR",
+          "SAM",
+          "DRG"
+        ]
+      },
+      {
+        "label": "B. 靈巧",
+        "value": "26B",
+        "careers": [
+          "NIN",
+          "BRD",
+          "VPR"
+        ]
+      },
+      {
+        "label": "C. 智慧",
+        "value": "26C",
+        "careers": [
+          "BLM",
+          "SMN",
+          "SCH"
+        ]
+      },
+      {
+        "label": "D. 意志",
+        "value": "26D",
+        "careers": [
+          "WHM",
+          "AST",
+          "SGE"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "text": "如果戰鬥BGM可以自己選，你會放哪種？",
+    "options": [
+      {
+        "label": "A. 重金屬Rock",
+        "value": "27A",
+        "careers": [
+          "WAR",
+          "DRK",
+          "RPR"
+        ]
+      },
+      {
+        "label": "B. 古典交響曲",
+        "value": "27B",
+        "careers": [
+          "AST",
+          "RDM",
+          "PLD"
+        ]
+      },
+      {
+        "label": "C. 動感流行音樂",
+        "value": "27C",
+        "careers": [
+          "DNC",
+          "BRD"
+        ]
+      },
+      {
+        "label": "D. 不放音樂專注技能音效",
+        "value": "27D",
+        "careers": [
+          "BLM",
+          "SAM"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "text": "以下哪個武器名字最吸引你？",
+    "options": [
+      {
+        "label": "A. 聖光裁決之劍",
+        "value": "28A",
+        "careers": [
+          "PLD",
+          "WHM"
+        ]
+      },
+      {
+        "label": "B. 奈落之夜",
+        "value": "28B",
+        "careers": [
+          "DRK",
+          "RPR"
+        ]
+      },
+      {
+        "label": "C. 以太爆裂9000型",
+        "value": "28C",
+        "careers": [
+          "MCH",
+          "SGE",
+          "GNB"
+        ]
+      },
+      {
+        "label": "D. 萬象之書：奧秘之眼",
+        "value": "28D",
+        "careers": [
+          "SCH",
+          "SMN",
+          "AST"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "text": "如果要選一種圖騰/動物作為你的戰鬥守護靈，你會選？",
+    "options": [
+      {
+        "label": "A. 威猛的獅子",
+        "value": "29A",
+        "careers": [
+          "WAR",
+          "PLD"
+        ]
+      },
+      {
+        "label": "B. 靈巧的毒蛇",
+        "value": "29B",
+        "careers": [
+          "NIN",
+          "VPR",
+          "RPR"
+        ]
+      },
+      {
+        "label": "C. 浴火的鳳凰",
+        "value": "29C",
+        "careers": [
+          "WHM",
+          "RDM",
+          "SMN"
+        ]
+      },
+      {
+        "label": "D. 強大的巨龍",
+        "value": "29D",
+        "careers": [
+          "DRG",
+          "BLM",
+          "SAM"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "text": "以下哪種冒險者形象最吸引你？",
+    "options": [
+      {
+        "label": "A. 高貴的守護騎士",
+        "value": "30A",
+        "careers": [
+          "PLD",
+          "GNB"
+        ]
+      },
+      {
+        "label": "B. 暗影刺客",
+        "value": "30B",
+        "careers": [
+          "NIN",
+          "RPR",
+          "VPR"
+        ]
+      },
+      {
+        "label": "C. 奧術魔導士",
+        "value": "30C",
+        "careers": [
+          "BLM",
+          "SMN",
+          "RDM"
+        ]
+      },
+      {
+        "label": "D. 工程發明家",
+        "value": "30D",
+        "careers": [
+          "MCH",
+          "SGE"
+        ]
+      },
+      {
+        "label": "E. 慈愛治療聖者",
+        "value": "30E",
+        "careers": [
+          "WHM",
+          "AST",
+          "SCH"
+        ]
+      }
+    ]
+  }
+]

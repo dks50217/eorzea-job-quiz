@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FFXIV 職業適性問卷</title>
+  <!-- Element Plus via CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css" />
+  <!-- Vue 3 prod build -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://unpkg.com/element-plus/dist/index.full.min.js"></script>
+  <style>
+      :root{
+        --bg:#f2f4f8;
+        --primary:#0069ff;
+        --card:#ffffff;
+        --shadow:0 8px 24px rgba(0,0,0,.08);
+        --option-border:#dcdfe6;
+      }
+      html,body{height:100%;margin:0;font-family:"Inter",Segoe UI,Roboto,sans-serif;color:#1a1a1a;background:var(--bg);}
+      body{display:flex;align-items:center;justify-content:center;flex-direction:column;padding:1.5rem}
+      h1.title{font-size:clamp(1.25rem,4vw,1.75rem);font-weight:600;margin:0 0 1.5rem;text-align:center;}
+      .card{width:min(92vw,640px);background:var(--card);border-radius:16px;padding:2.5rem 2rem;box-shadow:var(--shadow);display:flex;flex-direction:column}
+      .question-text{font-size:1.4rem;font-weight:600;margin-bottom:2rem;text-align:center;line-height:1.45;color:#222}
+      /* full‑row radio option */
+      .option{width:100%;display:flex;align-items:center;border:1px solid var(--option-border);border-radius:10px;padding:.85rem 1.2rem;margin:.65rem 0;transition:all .2s ease;background:#fff;cursor:pointer;}
+      .option:hover{border-color:var(--primary);box-shadow:0 0 0 3px rgba(0,105,255,.08)}
+      .option .el-radio__label{font-size:1.1rem;color:#333;margin-left:.65rem;line-height:1.45}
+      .el-radio.option.is-checked{border-color:var(--primary);background:#eaf2ff}
+      .nav-btns{margin-top:2.4rem;display:flex;justify-content:space-between}
+      .el-button--primary{background:var(--primary);border:none}
+      .el-dialog__body{padding-top:1rem}
+      .el-dialog{border-radius:16px}
+  </style>
+<script src="https://unpkg.com/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+<body>
+  <h1 class="title">FFXIV 職業適性問卷</h1>
+
+  <div id="app" style="width:100%;display:flex;justify-content:center;">
+
+    <div v-if="!questions.length" style="width:640px"><el-skeleton animated :rows="6" /></div>
+
+    <!-- 單題呈現 -->
+    <div v-else class="card">
+      <div class="question-text">{{ currentQuestion.text }}</div>
+      <el-radio-group v-model="answers[currentIndex]" style="width:100%">
+        <el-radio
+          v-for="(opt,oi) in currentQuestion.options"
+          :key="oi"
+          :label="opt.value"
+          class="option"
+        >{{ opt.label }}</el-radio>
+      </el-radio-group>
+      <div class="nav-btns">
+        <el-button v-if="currentIndex>0" @click="prev" plain round>上一題</el-button>
+        <el-button type="primary" :disabled="!answers[currentIndex]" @click="nextOrSubmit" round>
+          {{ currentIndex === questions.length-1 ? "送出問卷" : "下一題" }}
+        </el-button>
+      </div>
+    </div>
+
+    <!-- 結果 -->
+    <el-dialog v-model="showResult" title="你的最佳三大職業！" width="480px" center>
+      <template #default>
+        <ol style="padding-left:1.3rem;font-size:1.2rem;color:#333">
+          <li v-for="(job,idx) in topThree" :key="job" style="margin:.8rem 0"><strong>#{{ idx+1 }} – {{ jobName(job) }}</strong></li>
+        </ol>
+      </template>
+      <template #footer>
+        <el-space wrap>
+          <el-button @click="downloadImage" plain>下載結果圖</el-button>
+          <el-button type="primary" @click="restart">重新作答</el-button>
+        </el-space>
+      </template>
+    </el-dialog>
+  </div>
+<script>
+const { createApp, reactive, onMounted, computed } = Vue;
+const JOBS=["PLD","WAR","DRK","GNB","WHM","SCH","AST","SGE","MNK","DRG","NIN","SAM","RPR","VPR","BRD","MCH","DNC","BLM","SMN","RDM","BLU","PIC"];
+const JOB_LABELS={PLD:"騎士 Paladin",WAR:"戰士 Warrior",DRK:"暗黑騎士 Dark Knight",GNB:"絕槍戰士 Gunbreaker",WHM:"白魔道士 White Mage",SCH:"學者 Scholar",AST:"占星術士 Astrologian",SGE:"賢者 Sage",MNK:"武僧 Monk",DRG:"龍騎士 Dragoon",NIN:"忍者 Ninja",SAM:"武士 Samurai",RPR:"鎌刀使 Reaper",VPR:"蝰蛇劍士 Viper",BRD:"吟遊詩人 Bard",MCH:"機工士 Machinist",DNC:"舞者 Dancer",BLM:"黑魔法師 Black Mage",SMN:"召喚士 Summoner",RDM:"赤魔法師 Red Mage",BLU:"青魔法師 Blue Mage",PIC:"繪靈法師 Pictomancer"};
+createApp({
+  setup(){
+    const state=reactive({questions:[],answers:[],currentIndex:0,showResult:false,topThree:[]});
+    onMounted(async()=>{
+      try{const res=await fetch("data/questions.json");state.questions=await res.json();state.answers=Array(state.questions.length).fill("");}
+      catch(e){ElementPlus.ElMessage.error("載入題目失敗");console.error(e);} });
+    const currentQuestion=computed(()=>state.questions[state.currentIndex]||{});
+    const prev=()=>state.currentIndex--;
+    function nextOrSubmit(){
+      if(state.currentIndex<state.questions.length-1){state.currentIndex++;return;}
+      if(state.answers.includes("")){ElementPlus.ElMessage.warning("還有題目沒填！");return;}
+      const scores=Object.fromEntries(JOBS.map(j=>[j,0]));
+      state.answers.forEach((ans,idx)=>{const opt=state.questions[idx].options.find(o=>o.value===ans);if(opt)opt.careers.forEach(c=>scores[c]++);});
+      state.topThree=Object.entries(scores).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([j])=>j);
+      state.showResult=true;
+    }
+    const jobName=c=>JOB_LABELS[c]||c;
+    async function downloadImage(){
+      const dlg=document.querySelector('.el-dialog');
+      if(!dlg)return;
+      const canvas=await html2canvas(dlg,{backgroundColor:null,scale:2});
+      const link=document.createElement('a');
+      link.href=canvas.toDataURL('image/png');
+      link.download='ffxiv-quiz-result.png';
+      link.click();
+    }
+    const restart=()=>{state.currentIndex=0;state.answers=Array(state.questions.length).fill("");state.showResult=false;state.topThree=[]};
+    return{...Vue.toRefs(state),currentQuestion,prev,nextOrSubmit,jobName,restart,downloadImage,...Vue.toRefs(state),currentQuestion,prev,nextOrSubmit,jobName,restart};
+  }
+}).use(ElementPlus).mount('#app');
+</script>
+</body>
+</html>
